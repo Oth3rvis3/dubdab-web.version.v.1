@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W budowie...</title>
+    <style>
+        /* Styl dla całej strony */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Ciemne, cieniowane tło (gradient radialny) */
+            background: radial-gradient(circle, #2c3e50 0%, #000000 100%);
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace; /* Wygląd "programistyczny" */
+            text-align: center;
+            overflow: hidden; /* Ukrywa paski przewijania */
+        }
+
+        /* Styl dla napisu */
+        .message {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            /* Lekki cień pod napisem, żeby wyglądał bardziej złowrogo */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        /* Opcjonalnie: lekki efekt "mrugania" dla napisu */
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        .message {
+            animation: blink 3s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">
+        I just started B*tch, give me some time
+    </div>
+</body>
+</html>
